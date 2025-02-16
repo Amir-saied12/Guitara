@@ -1,0 +1,12 @@
+@media  (max-width: 420px){
+    .gallery > img {
+        width: 100%;
+    }
+    
+}
+@media  (max-width: 320px){
+    .gallery {
+        margin: 109px;
+    }
+    
+}

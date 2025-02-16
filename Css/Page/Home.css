@@ -1,0 +1,47 @@
+.swiper-slide{
+    background-image: url(../../img/home-slider-slide-2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.bg{
+    height: 500px;
+}
+
+.content{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+.gallery {
+    --s: 130px; /* control the size */
+    --g: 10px;  /* control the gap */
+    display: grid;
+    margin: calc(var(--s) + var(--g));
+  }
+  
+  .gallery > img {
+    grid-area: 1/1;
+    width: var(--s);
+    aspect-ratio: 0.866;
+    object-fit: cover;
+    clip-path: polygon(0% 25%,0% 75%,50% 100%,100% 75%,100% 25%,50% 0);
+    transform: translate(var(--_x,0),var(--_y,0));
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .2s linear;
+    background: black;
+  }
+  .gallery > img:hover {
+    filter: grayscale(0);
+    z-index: 1;
+  }
+  
+  .gallery > img:nth-child(1) {--_x: calc(-100% - var(--g))}
+  .gallery > img:nth-child(7) {--_x: calc( 100% + var(--g))}
+  .gallery > img:nth-child(3),
+  .gallery > img:nth-child(5) {--_y: calc(-75% - .87*var(--g))}
+  .gallery > img:nth-child(4),
+  .gallery > img:nth-child(6) {--_y: calc( 75% + .87*var(--g))}
+  .gallery > img:nth-child(3),
+  .gallery > img:nth-child(4) {--_x: calc(-50% - .5*var(--g))}
+  .gallery > img:nth-child(5), 
+  .gallery > img:nth-child(6) {--_x: calc( 50% + .5*var(--g))}

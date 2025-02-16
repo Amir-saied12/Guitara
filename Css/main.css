@@ -1,0 +1,23 @@
+/* Vendor */
+@import url(./Vendor/bootstrap.min.css);
+
+/* Pages */
+@import url(./Page/Header.css);
+@import url(./Page/Home.css);
+@import url(./Page/Footer.css);
+
+/* Responsive */
+@import url(./Responsive/Responsive.css);
+/* Fixed */
+img{
+    width: 100%;
+    display: block;
+}
+*{
+    font-family: 'Arial', sans-serif;
+    color: white !important;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
